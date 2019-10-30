@@ -1,7 +1,3 @@
-CREATE DATABASE baseball;
-
-USE baseball;
-
 CREATE TABLE teams (
   id INT AUTO_INCREMENT,
   location VARCHAR(255),
@@ -34,7 +30,7 @@ CREATE TABLE players (
   id INT AUTO_INCREMENT,
   firstName VARCHAR(255),
   lastName VARCHAR(255),
-  position VARCHAR(10),
+  position VARCHAR(10), 
   throws ENUM('R','L','B'),
   hits ENUM('R','L','B'),
   currentTeamId INT NOT NULL,
